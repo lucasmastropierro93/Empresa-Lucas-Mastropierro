@@ -33,6 +33,7 @@ h2 {
     align-items: center;
     background-color: var(--gris);   
     width: 100%;
+    background-image: linear-gradient(45deg, #cfdad4, #68706a);
 }
 .imagen-superior1 {
     display:flex;
@@ -54,7 +55,7 @@ text-decoration: none;
     background-color: var(--blanco);
     color: var(--oscuro);
     text-decoration: none;
-    
+    transition: background-color 0.8s;
 }
 .menu {
     display: flex;
@@ -85,6 +86,7 @@ text-decoration: none;
 .submenu li a {
     display: block;
     padding: 15px;
+    transition: background-color 0.8s;
 }
 .menu li:hover .submenu {
     display: block;
@@ -108,7 +110,7 @@ background-color: var(--blanco);
     display: flex;
     background-color: var(--gris);
     padding: 100px;
-
+    
 }
 .titulo__nosotros {
 font-family: 'Montserrat', sans-serif;
@@ -123,8 +125,12 @@ font-size: 200%;
     color: var(--oscuro);
 }
 .video__nosotros {
-    border-style: outset;
-    border-width: 7px;
+    border-radius: 10px;
+    
+    transition: background-color 0.8s;
+}
+.video__nosotros:hover {
+    transform: rotate(5deg);
 }
 
 /* SERVICIOS */
@@ -203,7 +209,10 @@ p{
     border-radius: 10px;
     border: 3px solid white;
 }
- 
+.sombra:hover {
+    transition: background-color 0.8s;
+    transform: rotate(5deg);
+}
     /* UBICACION y*/
 
 .ubicacion {
