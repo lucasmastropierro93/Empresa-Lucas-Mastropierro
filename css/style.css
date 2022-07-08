@@ -27,83 +27,9 @@ h2 {
     color: var(--oscuro);
     font-size: 2rem;
 }
-.imagen-superior {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gris);   
-    width: 100%;
-    background-image: linear-gradient(45deg, #cfdad4, #68706a);
-}
-.imagen-superior1 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gris);   
-    width: 100%;
-}
 
-    /* BARRA DE NAVEGACION*/
-.logo {
-        margin-left: 4rem;   
-    }
-ul li {
-list-style:none;
-text-decoration: none;
-}
-.menu a {
-    background-color: var(--blanco);
-    color: var(--oscuro);
-    text-decoration: none;
-    transition: background-color 0.8s;
-}
-.menu {
-    display: flex;
-    font-weight: bold;
-    height: 100px;
-}
 
-.navegador {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--blanco);
-    width: 100%;
-    position: fixed;
-}
-
-.menu li ul {
-    
-    position:absolute;
-    min-width: 140px;
-}
-.submenu {
-    
-    position: absolute;
-    display: none;
-    
-
-}
-.submenu li a {
-    display: block;
-    padding: 15px;
-    transition: background-color 0.8s;
-}
-.menu li:hover .submenu {
-    display: block;
-    margin-top: 10px;
-}
-.menu a:hover { 
-    background-color: var(--primario);
-      
-    
-}
-
-.background-nav {
-padding: 50px;
-background-color: var(--blanco);
-
-}
-
+/*generales*/
 
     /* NOSOTROS */
 .nosotros {
@@ -125,8 +51,8 @@ font-size: 200%;
     color: var(--oscuro);
 }
 .video__nosotros {
-    border-radius: 10px;
     
+    border-radius: 10px;
     transition: background-color 0.8s;
 }
 .video__nosotros:hover {
@@ -138,11 +64,10 @@ font-size: 200%;
     background-color: var(--fucsia);
     display: grid;
     grid-template-areas:
-    ". . ." 
     "impresiondigital serigrafia offset"
     "troquelado router termoformado"
-    ". . .";
-    grid-template-rows: repeat(4, 1fr);
+    ;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -173,11 +98,11 @@ h3{
    text-align: center;
 }
 p{
-    display: flex;
-    justify-content: center;
+    
+    text-align: center;
     color: var(--blanco);
     font-weight: bold;
-    text-align: center;
+    
     
 }
 .icon1 {
@@ -191,20 +116,14 @@ p{
 }
 
       /* PORTAFOLIO*/
-.Portafolio__titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 200%;
-    background-color: var(--gris);
-    padding: 50px;
-}
-.portafolio__contenedor {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--fucsia);
-    padding: 10px;
-}
 
+
+.color {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--blanco);
+    background-color: var(--fucsia);
+}
 .sombra {
     border-radius: 10px;
     border: 3px solid white;
@@ -212,49 +131,17 @@ p{
 .sombra:hover {
     transition: background-color 0.8s;
     transform: rotate(5deg);
+    transform: scale(2);
+    margin-left: 20px;
 }
+.zoom {
+    text-decoration: none;
+    list-style: none;
+}
+
     /* UBICACION y*/
 
-.ubicacion {
-    background-color: var(--gris);
-    display: flex;
-    justify-content: space-around;
-}
 
- .ubicacion__titulo {
-    
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 200%;
-        background-color: var(--gris);
-        padding: 50px;
-    
-}
-
-.ubicacion__mapa {
-    display: flex;
-    margin-left: 70px;
-}
-.ubicacion__texto {
-    display: block;
-    margin-top: 100px;
-}
-       
-.contacto__form {
-    font-family: 'Montserrat', sans-serif;
-    border-radius:10px;
-    background-color: var(--griss);
-    margin-bottom: 70px;
-    margin-right: 30px;
-}
-.contacto__form fieldset {
-    border: none;
-    
-}
-.contacto__form legend {
-    text-align: center;
-    
-}
 
 .sombra2 {
     -webkit-box-shadow: 10px 9px 7px -3px rgba(0,0,0,0.75);
@@ -263,85 +150,43 @@ p{
 }
 
 footer {
-    
+    width: 100%;
+    height: 200px;
     background-color: var(--fucsia);
 }
-/**OTRAS PAGINAS**/
 
 
 
 
-        /* MEDIA */
-/** DESKTOP **/
-@media (max-width: 1040px){
-    .logo {
-        display: none;
-    }
-    .logo1 a {
-        display: none;
-    }
-    .navegador {
-        
-        justify-content: center;
-    }
-}
-/** IPAD PRO **/
-@media (max-width: 1024px){
-    .sombra {
-        width: 110px;
-        height: 130px;
-    }
-    .ubicacion {
-        display: block;
-    }
-    .ubicacion__contacto {
-        display: none;
-    }
-    .sombra2 {
-        margin-left: 250px;
-    }
-    .ubicacion__texto{
-        text-align: center;
-    }
-}
+
+
 @media (max-width: 800px){
-    .background-nav {
-        padding: 20px;
-    }
-    .menu {
-        align-items: center;
-        justify-content: center;
-    }
-    .img {
-        width: 600px;
-    } 
+    
+     
     .video__nosotros {
         display: none;
     }
-    .sombra {
-        width: 90px;
-        height: 110px;
-    }
-    .ubicacion {
-        display: block;
-    }
-    .ubicacion__contacto {
-        display: none;
-    }
-    .sombra2 {
-        margin-left: 100px;
-    }
-    .ubicacion__texto{
-        text-align: center;
-    }
-    .imagen-superior{
-        
-        display: none;
-    }
-}
+    footer {
+        height: 240px;
+    }   
+}   
 
 @media (max-width: 768px){
- 
+    .servicios {
+        background-color: var(--fucsia);
+        display: grid;
+        grid-template-areas: 
+        "impresiondigital serigrafia"
+        "offset troquelado"
+        "router termoformado";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;    
+        }
+ .mapa {
+    margin-left: 150px;
+ }
 }
 @media (max-width: 600px){
     .servicios {
@@ -356,36 +201,32 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .sombra {
-        width: 80px;
-        height: 95px;
-    }
-    .sombra2 {
-        margin-left: 40px;
-    }
-    .imagen-superior1 {
-        display: block;
-        
+    footer {
+        height: 240px;
     }
 }
 @media (max-width: 480px){
-    .background-nav {
-        padding: 10px;
-    }
-    .menu {
-        align-items: center;
+    .servicios {
+        background-color: var(--fucsia);
+        display: grid;
+        grid-template-areas: 
+        "impresiondigital"
+        "serigrafia"
+        "offset"
+        "troquelado"
+        "router"
+        "termoformado";
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-    }
-.sombra {
-    width: 60px;
-    height: 75px;
-}
-.sombra2 {
-    margin-left: -20px;
-}
-.imagen-superior1 {
-margin-left: -100px;
-}
+        align-items: center;
+        }
+        .mapa {
+            margin-left: -20px;
+        }
+        footer {
+            height: 240px;
+        }
 }
 @media (max-width: 375px){
     .servicios {
@@ -403,26 +244,26 @@ margin-left: -100px;
     justify-content: center;
     align-items: center;
     }
-    .sombra {
-    width: 45px;
-    height: 55px;
-}
-    .sombra2 {
-    margin-left: -70px;
+    .mapa {
+        margin-left: -40px;
+    }
+    .info {
+        margin-left: -20px;
+    }
+    footer {
+        height: 240px;
+    }
+    .texto__nosotros {
+        margin-left: -20px;
+    }
 }
 
 @media (max-width: 320px){
-    .background-nav {
-        padding: 2px;
-    }
-    .menu {
-        align-items: center;
-        justify-content: center;
+    
+    footer {
+        height: 240px;
     }
     .nosotros {
         margin-left: -40px;
-}
-.imagen-superior1 {
-    margin-left: -200px;
 }
 }
