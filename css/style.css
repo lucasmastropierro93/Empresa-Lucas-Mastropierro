@@ -1,2 +1,95 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFc107;
+  --secundario: #0097A7;
+  --gris: #FEF8F7;
+  --fucsia:#ff009a;
+  --griss: #757575; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
 body {
-  background-color: red; }
+  font-size: 16px;
+  background-color: var(--gris); }
+
+h2 {
+  text-align: center;
+  color: var(--oscuro);
+  font-size: 2rem; }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  color: var(--blanco);
+  text-align: center; }
+
+p {
+  text-align: center;
+  color: var(--blanco);
+  font-weight: bold; }
+
+.nosotros {
+  display: flex;
+  background-color: var(--gris);
+  padding: 100px; }
+  .nosotros__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 200%; }
+  .nosotros__parrafo {
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+    color: var(--oscuro); }
+  .nosotros__video {
+    border-radius: 10px;
+    transition: background-color 0.8s; }
+    .nosotros__video:hover {
+      transform: rotate(5deg); }
+
+.servicios {
+  background-color: var(--fucsia);
+  display: grid;
+  grid-template-areas: "impresiondigital serigrafia offset" "troquelado router termoformado";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center; }
+  .servicios__1 {
+    grid-area: impresiondigital; }
+  .servicios__2 {
+    grid-area: serigrafia; }
+  .servicios__3 {
+    grid-area: offset; }
+  .servicios__4 {
+    grid-area: troquelado; }
+  .servicios__5 {
+    grid-area: router; }
+  .servicios__6 {
+    grid-area: termoformado; }
+  .servicios__icon1 {
+    display: flex;
+    justify-content: center; }
+  .servicios__texto {
+    width: auto;
+    font-size: 1.5rem; }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  color: var(--blanco);
+  text-align: center; }
+
+p {
+  text-align: center;
+  color: var(--blanco);
+  font-weight: bold; }

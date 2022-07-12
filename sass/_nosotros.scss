@@ -1,0 +1,30 @@
+.nosotros {
+    display: flex;
+    background-color: var(--gris);
+    padding: 100px;
+    
+    &__titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 200%;
+    }
+    &__parrafo {
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        color: var(--oscuro);
+    }
+    &__video {
+        border-radius: 10px;
+        transition: background-color 0.8s;
+    
+    &:hover {
+        transform: rotate(5deg);
+    }
+    }
+}
+
+
+
+
+

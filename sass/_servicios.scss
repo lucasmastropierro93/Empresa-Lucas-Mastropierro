@@ -1,0 +1,57 @@
+.servicios {
+    background-color: var(--fucsia);
+    display: grid;
+    grid-template-areas:
+    "impresiondigital serigrafia offset"
+    "troquelado router termoformado"
+    ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    &__1 {
+        grid-area: impresiondigital;
+    }
+    &__2 {
+        grid-area: serigrafia;
+    }
+    &__3 {
+        grid-area: offset;
+    }
+    &__4 {
+        grid-area: troquelado;
+    }
+    &__5 {
+        grid-area: router;
+    }
+    &__6 {
+        grid-area: termoformado;
+    }
+
+    &__icon1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__texto {
+        width: auto;
+        font-size: 1.5rem;
+    }
+
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    color: var(--blanco);
+   text-align: center;
+}
+p{
+    
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+     
+}
+
