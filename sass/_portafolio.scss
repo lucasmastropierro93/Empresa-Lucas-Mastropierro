@@ -18,6 +18,44 @@
     text-decoration: none;
     list-style: none;
 }
+
+@mixin card-base($borde,$fondo)  {
+    
+    display: flex;
+    border-radius: 10px;
+    border: $borde;
+    background-color: $fondo;
+    padding: 10px;
+}
 .portafolio__imagenes {
     width: 100%;
+    
+
+&-card{
+    &1{
+        @include card-base(4px solid #f8bbd0,#ad1457 )
+        
+    }
+    &2{
+        @include card-base(4px solid #f48fb1,#c2185b)        
+    }
+    &3{
+        @include card-base(4px solid #f06292,#d81b60)
+    }
+    &4{
+        @include card-base(4px solid #ec407a,#e91e63)
+    }
+    &5{
+        @include card-base(4px solid #e91e63,#ec407a)
+    }
+    &6{
+        @include card-base(4px solid #d81b60,#f06292)
+    }
+    &7{
+        @include card-base(4px solid #c2185b,#f48fb1)
+    }
+    &8{
+        @include card-base(4px solid #ad1457,#f8bbd0)
+    }
+}
 }

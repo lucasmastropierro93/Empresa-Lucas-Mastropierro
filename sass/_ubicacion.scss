@@ -9,3 +9,21 @@ footer {
     height: 200px;
     background-color: $fucsia;
 }
+
+.btn-enviar {
+@extend .color;
+
+&:hover{
+    background-color: $amarillo;
+    opacity: 0.8;
+}
+
+}
+.btn-borrar {
+@extend .color;
+
+&:hover{
+    background-color: $amarillo;
+    opacity: 0.8;
+}
+}
