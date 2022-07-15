@@ -62,7 +62,13 @@ h2 {
     justify-content: center;
     align-items: center; }
   .mapa {
-    margin-left: 150px; } }
+    margin-left: 150px; }
+  .carta {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 600px) {
   .servicios {
@@ -123,7 +129,6 @@ h2 {
     font-weight: bold;
     font-size: 200%; }
   .nosotros__parrafo {
-    display: block;
     padding: 20px;
     font-weight: bold;
     color: var(--oscuro); }
