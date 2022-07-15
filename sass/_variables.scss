@@ -1,2 +1,24 @@
 $fucsia: #ff009a;
 $amarillo: #D4FF00;
+
+
+//**map**//
+$redessociales: (
+contacto: white,
+facebook: rgb(1, 1, 119),
+instagram: rgb(167, 6, 6),   
+);
+
+//**bucle**//
+
+@each $nombre,$color in $redessociales {
+
+    .link-#{$nombre} {
+        padding: 10px;
+        font-weight: bold;
+        background-color:$fucsia;
+        color: $color;
+        
+    }
+    
+}

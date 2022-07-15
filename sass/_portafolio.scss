@@ -27,12 +27,16 @@
     background-color: $fondo;
     padding: 10px;
 }
+.espacio {
+    padding: 50px;
+}
 .portafolio__imagenes {
     width: 100%;
     
 
 &-card{
     &1{
+    
         @include card-base(4px solid #f8bbd0,#ad1457 )
         
     }

@@ -1,3 +1,21 @@
+.link-contacto {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff009a;
+  color: white; }
+
+.link-facebook {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff009a;
+  color: #010177; }
+
+.link-instagram {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ff009a;
+  color: #a70606; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -168,6 +186,9 @@ p {
 .zoom {
   text-decoration: none;
   list-style: none; }
+
+.espacio {
+  padding: 50px; }
 
 .portafolio__imagenes {
   width: 100%; }
