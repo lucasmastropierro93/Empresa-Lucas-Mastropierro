@@ -36,6 +36,11 @@ body {
   font-size: 16px;
   background-color: var(--gris); }
 
+h1 {
+  text-align: center;
+  color: var(--oscuro);
+  font-size: 2rem; }
+
 h2 {
   text-align: center;
   color: var(--oscuro);
