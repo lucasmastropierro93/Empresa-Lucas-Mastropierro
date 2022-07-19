@@ -1,0 +1,116 @@
+@media (max-width: 800px){
+    
+     
+    .nosotros__video {
+        display: none;
+    }
+    footer {
+        height: 240px;
+    }   
+}   
+
+@media (max-width: 768px){
+    .servicios {
+        background-color: $fucsia;
+        display: grid;
+        grid-template-areas: 
+        "impresiondigital serigrafia"
+        "offset troquelado"
+        "router termoformado";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;    
+        }
+        
+ .mapa {
+    margin-left: 150px;
+ }
+ .carta {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+ }
+}
+
+@media (max-width: 600px){
+    .servicios {
+        background-color: $fucsia;
+        display: grid;
+        grid-template-areas: 
+        "impresiondigital serigrafia"
+        "offset troquelado"
+        "router termoformado";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        height: 240px;
+    }
+}
+@media (max-width: 480px){
+    .servicios {
+        background-color: $fucsia;
+        display: grid;
+        grid-template-areas: 
+        "impresiondigital"
+        "serigrafia"
+        "offset"
+        "troquelado"
+        "router"
+        "termoformado";
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        }
+        .mapa {
+            margin-left: -20px;
+        }
+        footer {
+            height: 240px;
+        }
+}
+@media (max-width: 375px){
+    .servicios {
+    background-color: $fucsia;
+    display: grid;
+    grid-template-areas: 
+    "impresiondigital"
+    "serigrafia"
+    "offset"
+    "troquelado"
+    "router"
+    "termoformado";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    }
+    .mapa {
+        margin-left: -40px;
+    }
+    .info {
+        margin-left: -20px;
+    }
+    footer {
+        height: 240px;
+    }
+    .texto__nosotros {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 320px){
+    
+    footer {
+        height: 240px;
+    }
+    .nosotros {
+        margin-left: -40px;
+}
+}
